@@ -35,7 +35,6 @@
 #define USE_SERIAL_TELEMETRY
 #endif
 
-
 #ifdef FD6288
 #define FIRMWARE_NAME           "FD6288_PA2  "
 #define DEAD_TIME               45
