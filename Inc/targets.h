@@ -1,6 +1,6 @@
 #ifndef USE_MAKE
-
-#define FD6288
+#define TEKKO32_4in1
+//#define FD6288
 //#define IFLIGHT
 //#define MP6531
 //#define TMOTOR55     // like iflight but with leds
@@ -27,6 +27,15 @@
 
 
 /****************************      F051 Targets ************************************/
+
+#ifdef TEKKO32
+#define FIRMWARE_NAME           "TEKKO32_PA2  "
+#define DEAD_TIME               45
+#define HARDWARE_GROUP_F0_E
+#define USE_SERIAL_TELEMETRY
+#endif
+
+
 #ifdef FD6288
 #define FIRMWARE_NAME           "FD6288_PA2  "
 #define DEAD_TIME               45
